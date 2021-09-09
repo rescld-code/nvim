@@ -1,0 +1,188 @@
+{
+	"coc.preferences.extensionUpdateCheck": "daily",
+	"coc.preferences.formatOnSaveFiletypes": [
+		"json"
+	],
+	"snippets.ultisnips.directories": [
+		"UltiSnips",
+		"$HOME/.config/nvim/UltiSnips",
+		"$HOME/.config/nvim/plugged/vim-snippets/UltiSnips"
+	],
+	"suggest.noselect": true,
+	"suggest.enablePreselect": false,
+	"suggest.completionItemKindLabels": {
+		"class": "\uf0e8",
+		"color": "\ue22b",
+		"constant": "\uf0c1",
+		"default": "\uf29c",
+		"enum": "\uf85b",
+		"enumMember": "\uf02b",
+		"event": "\ufacd",
+		"field": "\uf93d",
+		"file": "\uf723",
+		"folder": "\uf115",
+		"function": "\u0192",
+		"interface": "\ue713",
+		"keyword": "\uf1de",
+		"method": "\uf6a6",
+		"module": "\uf40d",
+		"operator": "\uf915",
+		"property": "\ue624",
+		"reference": "\ufa46",
+		"snippet": "\ue60b",
+		"struct": "\ufb44",
+		"text": "\ue612",
+		"typeParameter": "\uf728",
+		"unit": "\uf475",
+		"value": "\uf89f",
+		"variable": "\ufb4d"
+	},
+	"diagnostic.highlightOffset": 1,
+	"diagnostic.errorSign": "\uf467",
+	"diagnostic.warningSign": "\uf071",
+	"diagnostic.infoSign": "\uf129",
+	"diagnostic.hintSign": "\uf864",
+	"diagnostic.displayByAle": false,
+	"diagnostic.refreshOnInsertMode": true,
+	"diagnostic.checkCurrentLine": true,
+	"diagnostic.enableHighlightLineNumber": true,
+	"diagnostic.virtualTextPrefix": " ❯❯❯ ",
+	"diagnostic.virtualText": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.width": 27,
+	"explorer.keyMappings.global": {
+		"k": "nodePrev",
+		"j": "nodeNext",
+		"gk": "expandablePrev",
+		"gj": "expandableNext",
+		"*": "toggleSelection",
+		"<tab>": "actionMenu",
+		"h": "collapse",
+		"l": [
+			"expandable?",
+			"expand",
+			"open"
+		],
+		"J": [
+			"toggleSelection",
+			"nodeNext"
+		],
+		"K": [
+			"toggleSelection",
+			"nodePrev"
+		],
+		"gl": "expandRecursive",
+		"gh": "collapseRecursive",
+		"o": "expandOrCollapse",
+		"<cr>": [
+			"expandable?",
+			"cd",
+			"open"
+		],
+		"e": "open",
+		"si": "open:split",
+		"S": "open:split:plain",
+		"su": "open:vsplit",
+		"t": "open:tab",
+		"<bs>": "gotoParent",
+		"gp": "preview:labeling",
+		"y": "copyFilepath",
+		"Y": "copyFilename",
+		"c": "copyFile",
+		"x": "cutFile",
+		"p": "pasteFile",
+		"d": "delete",
+		"D": "deleteForever",
+		"a": "addFile",
+		"A": "addDirectory",
+		"r": "rename",
+		".": "toggleHidden",
+		"R": "refresh",
+		"?": "help",
+		"q": "quit",
+		"<esc>": "quit",
+		"X": "systemExecute",
+		"gd": "listDrive",
+		"f": "search",
+		"F": "searchRecursive",
+		"gf": "gotoSource:file",
+		"gb": "gotoSource:buffer",
+		"[[": "sourcePrev",
+		"]]": "sourceNext",
+		"[d": "diagnosticPrev",
+		"]d": "diagnosticNext",
+		"[c": "gitPrev",
+		"]c": "gitNext",
+		"<<": "gitStage",
+		">>": "gitUnstage"
+	},
+	"languageserver": {
+		"python": {
+			"command": "python",
+			"args": [
+				"-mpyls",
+				"-vv",
+				"--log-file",
+				"/tmp/lsp_python.log"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"python"
+			],
+			"settings": {
+				"pyls": {
+					"enable": true,
+					"trace": {
+						"server": "verbose"
+					},
+					"commandPath": "",
+					"configurationSources": [
+						"pycodestyle"
+					],
+					"plugins": {
+						"jedi_completion": {
+							"enabled": true
+						},
+						"jedi_hover": {
+							"enabled": true
+						},
+						"jedi_references": {
+							"enabled": true
+						},
+						"jedi_signature_help": {
+							"enabled": true
+						},
+						"jedi_symbols": {
+							"enabled": true,
+							"all_scopes": true
+						},
+						"mccabe": {
+							"enabled": true,
+							"threshold": 15
+						},
+						"preload": {
+							"enabled": true
+						},
+						"pycodestyle": {
+							"enabled": true
+						},
+						"pydocstyle": {
+							"enabled": false,
+							"match": "(?!test_).*\\.py",
+							"matchDir": "[^\\.].*"
+						},
+						"pyflakes": {
+							"enabled": true
+						},
+						"rope_completion": {
+							"enabled": true
+						},
+						"yapf": {
+							"enabled": true
+						}
+					}
+				}
+			}
+		}
+	}
+}

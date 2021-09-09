@@ -1,0 +1,34 @@
+snippet c "c init"
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+
+	${1}
+	printf("hello world\n");
+	
+	return 0;
+}
+endsnippet
+
+snippet cpp "cpp init"
+#include <iostream>
+using namespace std;
+int main(int argc, char **argv) {
+
+	${1}
+	cout << "hello world" << endl;
+	
+	return 0;
+}
+endsnippet
+
+snippet for "for"
+for(${1:init}; ${2:condition}; ${3:increment}){
+	${4}
+}${5}
+endsnippet
+
+snippet tyst "typedef struct"
+typedef struct{
+	${2}
+}${1:name}
+endsnippet
