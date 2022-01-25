@@ -45,6 +45,11 @@ Plug 'theniceboy/bullets.vim'		" 列表修复
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }			" 表格修复
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }	" Markdown预览
 
+" Latex
+" Plug 'vim-latex/vim-latex'
+Plug 'lervag/vimtex'
+Plug 'xuhdev/vim-latex-live-preview'
+
 call plug#end()
 " }}}
 
@@ -103,10 +108,11 @@ inoremap <silent><expr> <c-o> coc#refresh()
 " Coc插件列表
 let g:coc_global_extensions = [
 			\ 'coc-go',
+			\ 'coc-css',
 			\ 'coc-json',
 			\ 'coc-yank',
-			\ 'coc-clangd',
 			\ 'coc-explorer',
+			\ 'coc-tsserver',
 			\ 'coc-snippets',
 			\ 'coc-translator',
 			\ ]
@@ -334,3 +340,12 @@ set statusline+=%{NearestMethodOrFunction()}
 autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 " }}}
 
+" Latex        --------------- {{{
+" let g:vimtex_view_method = 'zathura'
+let g:vimtex_view_general_viewer = 'evince'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:vimtex_view_general_options_latexmk = '--unique'
+
+let g:livepreview_previewer = 'evince'
+let g:livepreview_engine = 'xelatex'
+" }}}

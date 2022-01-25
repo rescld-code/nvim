@@ -1,4 +1,5 @@
 let mapleader = ","
+let maplocalleader = ","
 
 " 行号设置 ---------- {{{
 set number			" 显示绝对行号
@@ -14,7 +15,7 @@ set cursorcolumn	" 高亮光标所在列
 " }}}
 
 " 文本缩进 ---------- {{{
-" set cindent
+set cindent
 set tabstop=4
 " set autoindent
 set shiftround      " 设置文本缩进长度为 shiftwidth 的倍数

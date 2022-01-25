@@ -1,4 +1,5 @@
 inoremap qq <esc>
+inoremap jj <esc>
 
 " 打开/刷新配置文件 ------- {{{
 nnoremap <leader>r :source $MYVIMRC<cr>
