@@ -20,11 +20,11 @@ augroup init
 
 augroup END
 
-" 加载插件配置
-source ~/.config/nvim/config/plugins.vim
-
 " 加载配置文件
 source ~/.config/nvim/config/settings.vim
 source ~/.config/nvim/config/functions.vim
 source ~/.config/nvim/config/mappings.vim
 source ~/.config/nvim/config/snippets.vim
+
+" 加载插件配置
+source ~/.config/nvim/config/plugins.vim
